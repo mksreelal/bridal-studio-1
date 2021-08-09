@@ -1,22 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
-
-@font-face {
-  font-family: "roboto_monoregular";
-  src: url("./fonts/font3/robotomono-variablefont_wght-webfont.woff")
-      format("woff2"),
-    url("./fonts/font3/robotomono-variablefont_wght-webfont.woff2")
-      format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "baloo_2regular";
-  src: url("./fonts/font4/baloo2-regular-webfont.woff") format("woff2"),
-    url("./fonts/font4/baloo2-regular-webfont.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
 
 * {
   padding: 0px;
@@ -31,6 +15,10 @@ body {
   background-repeat: no-repeat;
   background-blend-mode: lighten;
   background-size: 100%, 100vh;
+  font-family: "Nova Round", cursive;
+}
+p {
+  font-size: 25px;
 }
 .wrapper {
   margin: 0 30px;
@@ -145,10 +133,10 @@ nav h1.left img {
   margin-bottom: 26vh;
 }
 #home .spotlight .header-slide {
-  height: 10px;
+  width: 80vh;
   position: fixed;
   right: 0px;
-  top: 30vh;
+  top: 20vh;
 }
 #home .spotlight .header-slide img {
   width: 100%;
@@ -159,6 +147,7 @@ nav h1.left img {
   font-size: 44px;
   text-transform: uppercase;
   font-weight: 400;
+  font-family: "Aclonica", sans-serif;
 }
 #home .spotlight h4 {
   font-size: 22px;
@@ -228,20 +217,17 @@ nav h1.left img {
   position: relative;
 }
 #about .main h1 {
-  font-family: "cormorant_garamondlight";
   font-size: 30px;
 }
 #about .main h4 {
   font-size: 22px;
-  font-family: "cormorant_garamondlight";
   margin-bottom: 10px;
 }
 #about .main p {
   font-size: 16px;
-  max-width: 400px;
+  max-width: 450px;
   margin: 30px 0;
   color: rgba(255, 255, 255, 0.61);
-  font-weight: 500;
 }
 #about .main a.button {
   display: inline-block;
@@ -285,8 +271,8 @@ nav h1.left img {
   margin-right: 5px;
 }
 #gallery .head h3 {
-  font-size: 22px;
-  font-family: "Alex Brush", cursive;
+  font-size: 24px;
+  text-transform: capitalize;
   font-weight: 900;
 }
 .swiper-container {
@@ -349,10 +335,10 @@ nav h1.left img {
   min-height: 20vh;
 }
 #contact .main .address .add a {
+  font-family: sans-serif;
   display: flex;
   padding: 10px;
   gap: 40px;
-  font-weight: 900;
   opacity: 0.8;
   font-size: 11px;
 }
@@ -412,13 +398,19 @@ nav h1.left img {
 }
 #contact .main .mail input[type="text"] {
   padding: 10px;
-  background: rgba(255, 255, 255, 0.562);
+  background: rgba(65, 65, 65, 0.562);
   border: none;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+input:active,
+input:focus {
+  outline: none;
 }
 #contact .main .mail input[type="text"]::placeholder {
   color: silver;
