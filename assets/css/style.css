@@ -37,6 +37,12 @@ a {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  position: fixed;
+  left: 0px;
+  right: 0;
+  top: 0px;
+  z-index: 100000;
+  background-color: black;
 }
 nav h1.left img {
   width: 40px;
@@ -141,13 +147,28 @@ nav h1.left img {
 #home .spotlight .header-slide img {
   width: 100%;
   display: block;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 #home .spotlight h1.head {
   font-size: 44px;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Aclonica", sans-serif;
+  background-color: #fff;
+  background-image: linear-gradient(45deg, #464541, #f56600);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: 2s all;
+  animation: textan 2s linear infinite alternate;
+  -webkit-transition: 2s all;
+  -moz-transition: 2s all;
+  -ms-transition: 2s all;
+  -o-transition: 2s all;
+  -webkit-animation: textan 2s linear infinite alternate;
 }
 #home .spotlight h4 {
   font-size: 22px;
@@ -407,6 +428,7 @@ nav h1.left img {
   -o-border-radius: 10px;
   color: #fff;
   letter-spacing: 2px;
+  width: 70%;
 }
 input:active,
 input:focus {
@@ -445,11 +467,7 @@ footer .content .right span {
 }
 
 /*  */
-@media screen and (min-width: 360px) {
-  #contact .main .mail input[type="text"] {
-    width: 70%;
-  }
-}
+
 @media screen and (min-width: 480px) {
   #home .spotlight {
     margin-top: 10%;
@@ -468,9 +486,6 @@ footer .content .right span {
   }
   #about .main p {
     margin: 0 auto;
-  }
-  #contact .main .mail input[type="text"] {
-    width: 20%;
   }
 
   /* contact */
