@@ -343,22 +343,22 @@ nav h1.left img {
 }
 #contact .main .address .add {
   display: flex;
-  flex-direction: column;
-  margin-left: 40%;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 20vh;
 }
 #contact .main .address .add a {
   display: flex;
+  padding: 10px;
   gap: 40px;
   font-weight: 900;
   opacity: 0.8;
   font-size: 11px;
+}
+#contact .main .address .map iframe {
+  width: 250px;
+  height: 250px;
 }
 #contact .main .address .add span img {
   width: 20px;
@@ -453,14 +453,6 @@ footer .content .right span {
 }
 
 /*  */
-
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
-}
 @media screen and (min-width: 360px) {
   #contact .main .mail input[type="text"] {
     width: 70%;
@@ -490,14 +482,6 @@ footer .content .right span {
   }
 
   /* contact */
-  #contact .main .address .add {
-    margin-left: 55%;
-    transform: translate(-60%);
-    -webkit-transform: translate(-60%);
-    -moz-transform: translate(-60%);
-    -ms-transform: translate(-60%);
-    -o-transform: translate(-60%);
-  }
 }
 @media screen and (min-width: 640px) {
   .humburgar {
@@ -544,14 +528,6 @@ footer .content .right span {
 }
 
 @media screen and (min-width: 768px) {
-  #contact .main .address .add {
-    margin-left: 60%;
-    transform: translate(-60%);
-    -webkit-transform: translate(-60%);
-    -moz-transform: translate(-60%);
-    -ms-transform: translate(-60%);
-    -o-transform: translate(-60%);
-  }
   .wrapper {
     margin: 0 90px;
   }
@@ -573,14 +549,6 @@ footer .content .right span {
   }
   #home .spotlight .cards .card {
     width: 200px;
-  }
-  #contact .main .address .add {
-    margin-left: 63%;
-    transform: translate(-63%);
-    -webkit-transform: translate(-63%);
-    -moz-transform: translate(-63%);
-    -ms-transform: translate(-63%);
-    -o-transform: translate(-63%);
   }
   .swiper-container {
     width: 460px;
