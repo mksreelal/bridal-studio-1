@@ -564,4 +564,65 @@ footer .content .right span {
   #home .spotlight .header-slide img {
     width: 100vh;
   }
+    #home .spotlight h1.head{
+  font-size: 100px;
+ }
+ #home .spotlight h4{
+  font-size: 40px;
+ }
+ #home .spotlight p.content {
+  font-size:16px;
+ }
+ #home .spotlight .cards .card{
+  width: 200px;
+  padding: 30px;
+ }
+ #home .spotlight .cards .card h1 {
+  font-size: 40px;
+ }
+#home .spotlight .cards .card h5{
+  font-size: 20px;
+}
+#about h1.hehe{
+  font-size: 30px;
+}
+#about .main h1{
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+#about .main h4{
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+#about .main p{
+  font-size: 18px;
+  max-width: 700px;
+  letter-spacing: 2px;
+}
+#gallery .head h1{
+  font-size: 30px;
+}
+#gallery .head h3{
+  font-size: 64px;
+  letter-spacing: 4px;
+}
+#contact .main h1 {
+  font-size: 30px;
+}
+#contact .main .address .add a {
+  font-size: 20px;
+}
+#contact .add{
+  line-height: 60px;
+}
+#contact .location{
+
+  line-height: 30px;
+  text-align: left;
+}
+
+#about .wrapper .main p{
+  padding-top: 40px;
+}
+ 
 }
